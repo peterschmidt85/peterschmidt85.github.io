@@ -1,0 +1,81 @@
+# dstack
+
+> dstack is a unified control plane for GPU provisioning and orchestration that works with any GPU cloud, Kubernetes, or on-prem clusters.
+
+## Getting started
+
+- [Overview](https://dstack.ai/docs/index.md): Introduction to dstack and how it works
+- [Installation](https://dstack.ai/docs/installation.md): How to install the dstack server and CLI
+- [Quickstart](https://dstack.ai/docs/quickstart.md): Quick guide to creating fleets and submitting runs
+
+## Concepts
+
+- [Backends](https://dstack.ai/docs/concepts/backends.md): Configuring cloud providers and Kubernetes clusters
+- [Fleets](https://dstack.ai/docs/concepts/fleets.md): Managing pools of compute instances
+- [Dev environments](https://dstack.ai/docs/concepts/dev-environments.md): Provisioning remote instances for cloud-based development
+- [Tasks](https://dstack.ai/docs/concepts/tasks.md): Running commands for training and batch processing
+- [Services](https://dstack.ai/docs/concepts/services.md): Deploying models and web apps as endpoints
+- [Volumes](https://dstack.ai/docs/concepts/volumes.md): Managing persistent data storage
+
+### More
+
+- [Gateways](https://dstack.ai/docs/concepts/gateways.md): Managing ingress traffic and endpoints for services
+- [Secrets](https://dstack.ai/docs/concepts/secrets.md): Managing sensitive values and credentials
+- [Projects](https://dstack.ai/docs/concepts/projects.md): Organizing teams and isolating resources
+- [Metrics](https://dstack.ai/docs/concepts/metrics.md): Tracking and monitoring system metrics
+- [Events](https://dstack.ai/docs/concepts/events.md): Auditing resource state changes and operations
+- [Exports](https://dstack.ai/docs/concepts/exports.md): Exporting resources across projects
+
+## Guides
+
+- [CLI & API](https://dstack.ai/docs/guides/cli-api.md): How to use the dstack CLI and HTTP API
+- [Server deployment](https://dstack.ai/docs/guides/server-deployment.md): Deploying the dstack server
+- [Troubleshooting](https://dstack.ai/docs/guides/troubleshooting.md): Common issues and how to resolve them
+
+### More
+
+- [Protips](https://dstack.ai/docs/guides/protips.md): Tips and tricks for using dstack efficiently
+- [Tenant isolation](https://dstack.ai/docs/guides/tenant-isolation.md): Restricting access to hosts managed by dstack
+- [Upgrade](https://dstack.ai/docs/guides/upgrade.md): Upgrading to newer versions of dstack
+
+### Migration
+
+- [Slurm](https://dstack.ai/docs/guides/migration/slurm.md): This guide compares Slurm and dstack, and shows how to orchestrate equivalent GPU-based workloads using dstack.
+
+## Examples
+
+
+### Training
+
+- [TRL](https://dstack.ai/docs/examples/training/trl.md): Fine-tuning Llama with TRL — single-node SFT with QLoRA, or distributed across multiple nodes with FSDP and DeepSpeed
+- [Axolotl](https://dstack.ai/docs/examples/training/axolotl.md): Fine-tuning Llama models with Axolotl — single-node SFT with FSDP and QLoRA, or distributed across multiple nodes
+- [Ray+RAGEN](https://dstack.ai/docs/examples/training/ray-ragen.md): Multi-node agent fine-tuning using RAGEN with Ray and verl for reinforcement learning
+- [Miles](https://dstack.ai/docs/examples/training/miles.md): RL post-training Qwen2.5-32B with Miles, SGLang, Megatron-LM, and Ray across two 8xH100 nodes
+
+### Clusters
+
+- [AWS](https://dstack.ai/docs/examples/clusters/aws.md): High-performance distributed training on AWS using Elastic Fabric Adapter (EFA)
+- [GCP](https://dstack.ai/docs/examples/clusters/gcp.md): Creating and using GPU clusters on GCP with GPUDirect-TCPX and RoCE support
+- [Lambda](https://dstack.ai/docs/examples/clusters/lambda.md): Setting up Lambda clusters using Kubernetes or 1-Click Clusters with fast interconnect
+- [Crusoe](https://dstack.ai/docs/examples/clusters/crusoe.md): Using Crusoe clusters with InfiniBand support via VMs or Kubernetes
+- [Nebius](https://dstack.ai/docs/examples/clusters/nebius.md): Using Nebius clusters with InfiniBand support via VMs or Kubernetes
+- [NCCL/RCCL tests](https://dstack.ai/docs/examples/clusters/nccl-rccl-tests.md): Running NCCL and RCCL tests to validate cluster network bandwidth
+
+### Inference
+
+- [SGLang](https://dstack.ai/docs/examples/inference/sglang.md): Deploying Qwen3.6-27B using SGLang on NVIDIA and AMD GPUs
+- [Dynamo](https://dstack.ai/docs/examples/inference/dynamo.md): Deploying zai-org/GLM-4.5-Air-FP8 using NVIDIA Dynamo with Prefill-Decode disaggregation.
+- [vLLM](https://dstack.ai/docs/examples/inference/vllm.md): Deploying Qwen3.6-27B using vLLM on NVIDIA and AMD GPUs
+- [NIM](https://dstack.ai/docs/examples/inference/nim.md): Deploying Nemotron-3-Super-120B-A12B using NVIDIA NIM
+- [TensorRT-LLM](https://dstack.ai/docs/examples/inference/trtllm.md): Deploying Qwen3-235B-A22B-FP8 using NVIDIA TensorRT-LLM on NVIDIA GPUs
+
+### Models
+
+- [DeepSeek V4](https://dstack.ai/docs/examples/models/deepseek-v4.md): Deploying DeepSeek-V4-Pro using SGLang on NVIDIA B200:8
+- [Qwen 3.6](https://dstack.ai/docs/examples/models/qwen36.md): Deploying Qwen3.6-27B using SGLang on NVIDIA and AMD GPUs
+
+### Accelerators
+
+- [AMD](https://dstack.ai/docs/examples/accelerators/amd.md): Running dev environments, tasks, and services on AMD GPUs
+- [Tenstorrent](https://dstack.ai/docs/examples/accelerators/tenstorrent.md): Running inference, training, and dev environments on Tenstorrent Wormhole and Blackhole accelerators
+- [TPU](https://dstack.ai/docs/examples/accelerators/tpu.md): Deploying and fine-tuning models on Google Cloud TPUs using Optimum TPU and vLLM

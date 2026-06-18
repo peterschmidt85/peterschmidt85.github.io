@@ -1,0 +1,46 @@
+---
+title: What is dstack?
+description: Introduction to dstack and how it works
+---
+
+# What is dstack?
+
+`dstack` is a unified control plane for GPU provisioning and orchestration that works with any GPU cloud, Kubernetes, or on-prem clusters. 
+
+It streamlines development, training, and inference, and is compatible with any hardware, open-source tools, and frameworks.
+
+!!! info "Accelerators"
+    `dstack` supports `NVIDIA`, `AMD`, `TPU`, and `Tenstorrent` accelerators out of the box.
+
+## How does it work?
+
+<img src="https://dstack.ai/static-assets/static-assets/images/dstack-architecture-diagram-v11.svg" />
+
+### Set up the server
+
+> Before using `dstack`, ensure you've [installed](installation.md) the server, or signed up for [dstack Sky](https://sky.dstack.ai).
+
+### Define configurations
+
+`dstack` supports the following configurations:
+   
+* [Fleets](concepts/fleets.md) &mdash; for managing cloud and on-prem clusters
+* [Dev environments](concepts/dev-environments.md) &mdash; for interactive development using a desktop IDE
+* [Tasks](concepts/tasks.md) &mdash; for scheduling jobs, incl. distributed ones (or running web apps)
+* [Services](concepts/services.md) &mdash; for deploying models (or web apps)
+* [Volumes](concepts/volumes.md) &mdash; for managing network volumes (to persist data)
+
+Configuration can be defined as YAML files within your repo.
+
+### Apply configurations
+
+Apply the configuration either via the `dstack apply` CLI command (or through a programmatic API.)
+
+`dstack` automatically manages infrastructure provisioning and job scheduling, while also handling auto-scaling,
+port-forwarding, ingress, and more.
+
+!!! info "Where do I start?"
+    1. Proceed to [installation](installation.md)
+    2. See [quickstart](quickstart.md)
+    3. Browse [examples](/examples)
+    4. Join [Discord](https://discord.gg/u8SmfwPpMd)
